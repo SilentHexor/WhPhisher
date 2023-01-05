@@ -56,7 +56,7 @@ x86_64)
     echo "Unknown System Architecture"
 esac
 
-wget "https://github.com/WhBeatZ/NgrokWh/blob/main/files/ngrok-stable-linux-${architectureURL}.zip?raw=true" -O ngrok.zip
+wget "https://github.com/SilentHexor/NgrokWh/blob/main/files/ngrok-stable-linux-${architectureURL}.zip?raw=true" -O ngrok.zip
 
 unzip ngrok.zip
 cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
