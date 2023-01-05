@@ -161,16 +161,16 @@ def killer():
 # Update of WhPhisher
 def update():
     internet()
-    git_ver=popen("curl -s -N https://raw.githubusercontent.com/WhBeatZ/WhPhisher/main/files/version.txt").read().strip()
+    git_ver=popen("curl -s -N https://raw.githubusercontent.com/SilentHexor/WhPhisher/main/files/version.txt").read().strip()
     if (version != git_ver and git_ver != "404: Not Found"):
         system("clear")
-        changelog=popen("curl -s -N https://raw.githubusercontent.com/WhBeatZ/WhPhisher/main/files/changelog.log").read()
+        changelog=popen("curl -s -N https://raw.githubusercontent.com/SilentHexor/WhPhisher/main/files/changelog.log").read()
         print(logo)
         print(f"{info}WhPhisher Has An Update!\n{info2}Actual: {bred}{version}\n{info}Available: {bgreen}{git_ver}\n")
         upask=input(ask+"You Want To Upgrade WhPhisher (Recommended) [y] Update [n] Cancel --> "+bwhite)
         if upask=="y":
             print(nc)
-            system("cd .. && rm -rf WhPhisher && git clone https://github.com/WhBeatZ/WhPhisher.git && cd WhPhisher && python3 WhPhisher.py")
+            system("cd .. && rm -rf WhPhisher && git clone https://github.com/SilentHexor/WhPhisher.git && cd WhPhisher && python3 WhPhisher.py")
             sprint("\n"+success+"WhPhisher Install Successfully !! Restart Termux !\n")
 
             if (changelog != "404: Not Found"):
